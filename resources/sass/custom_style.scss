@@ -1,0 +1,486 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    .container-fluid {
+        main {
+            animation: transitionIn 1s;
+        }
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#loginPage {
+    background-image: url('https://images.unsplash.com/photo-1630650231815-a567e2ed26cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format');
+    min-height: calc(100vh - 70px);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// inizio navbar home page
+.navbar .logo {
+    color: $red;
+}
+
+#vue {
+    main {
+        min-height: calc(100vh - 70px);
+        animation: transitionIn 1s;
+    }
+}
+
+#app {
+    main {
+        min-height: calc(100vh - 70px);
+    }
+}
+
+// fine navbar home page
+// inizio modali login e register
+.button_login,
+.button_register {
+    background-color: $red;
+    border-radius: 5px;
+    border: 0;
+    color: $white;
+}
+
+.modal-dialog {
+    height: max-content;
+    width: 100%;
+    ;
+    .modal-body-left {
+        width: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .modal-body-right {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.btn-login-register {
+    background-color: $red;
+    border: none;
+    color: $white;
+    transition: 0.4s;
+}
+
+.btn-login-register:hover,
+.btn-login-register-green:hover {
+    color: $white;
+    background-color: rgb(220, 36, 36);
+}
+
+.btn-login-register-green {
+    background-color: $green;
+    border: none;
+    color: $white;
+}
+
+.color-red {
+    color: $red;
+}
+
+.color-red:hover {
+    color: $red;
+}
+
+// fine modali login e register
+// barra superiore HOST
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    a {
+        img {
+            height: 45px;
+        }
+    }
+}
+
+.my_user {
+    display: flex;
+    align-items: center;
+    .my_user_icon {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        overflow: hidden;
+        justify-content: center;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+//barra laterale
+.my_sidebar {
+    height: 100vh;
+    position: fixed;
+    margin-top: 70px;
+}
+
+.flex-column {
+    .nav-item {
+        a {
+            color: $red;
+            font-size: 25px;
+            transition: color 0.45s;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.col-md-10 {
+    margin-top: 70px;
+}
+
+//icona cestino dashboard
+.my-icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: $red;
+    }
+}
+
+//appartamenti degli host
+.host-apartments-img {
+    max-width: 400px;
+}
+
+//fine appartamenti degli host
+//appartamenti degli utenti
+.apartments-img {
+    max-width: 400px;
+}
+
+.color-grey-icon {
+    color: #c0c4c8;
+}
+
+.div-bordered {
+    border: 1px dotted #d8dce1;
+}
+
+.div-bordered-2 {
+    border-right: 1px dotted #d8dce1;
+}
+
+.div-bordered-3 {
+    border-bottom: 1px dotted #d8dce1;
+}
+
+.div-bordered-4 {
+    border-left: 1px dotted #d8dce1;
+}
+
+.icon-separation {
+    width: calc(100% / 3);
+}
+
+//fine appartamenti degli utenti
+//tutti i font size da 10 a 25px
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-27 {
+    font-size: 27px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-29 {
+    font-size: 29px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+//fine font size da 10 a 30px
+//fine font size da 10 a 25px
+//img edit apartment
+.img-edit-apartments {
+    margin: 10px 0px;
+    width: 300px;
+    img {
+        object-fit: cover;
+    }
+}
+
+//navbar
+.my-background-navbar {
+    background-color: $white;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.mw-25 {
+    max-width: 25%;
+}
+
+.padding-r-10px{
+    padding-right: 10px;
+}
+
+//navbar
+//creazione nuovo appartamento
+.flex-wrap .mb-3 input {
+    width: 280px;
+    min-width: auto;
+}
+
+//fine creazione nuovo appartamento
+//elenco miei appartamenti
+.btn-warning {
+    color: $white;
+    background-color: rgb(218, 218, 39);
+    border-color: rgb(218, 218, 39);
+}
+
+.btn-warning:hover {
+    color: $white;
+    background-color: rgb(204, 204, 47);
+    border-color: rgb(204, 204, 47);
+}
+
+//fine elenco miei appartamenti
+//footer
+.back-color-black {
+    background-color: rgb(180, 180, 180);
+    color: $white;
+    .col {
+        width: calc(100% / 3);
+        img {
+            filter: brightness(3);
+            width: 200px;
+        }
+    }
+    .color-white {
+        color: $white;
+    }
+}
+
+@media only screen and (min-width: 767px){
+    #navbarSupportedContent{
+        .dysplay-none {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {  
+
+    .my-background-navbar {
+        margin-left: auto;
+        width: 25%;
+        min-width: 110px;
+        padding: 10px;
+            
+        .navbar-buttons {
+            padding-right: 0;
+            padding: 10px;
+        }
+            
+        .pr-1{
+            padding-right: 0;
+        }
+
+        .mbr-10 {
+            margin-bottom: 10px;
+        }
+            
+        .border-top-resp{
+            border-top: 1px solid #b4b4b4;
+        }
+
+        .my-dropdown-menu{
+            border: none;
+            background-color: unset;
+            padding-top: 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .my-background-navbar {
+        width: 92px;
+    }
+}
+
+// SPONSORIZZATE PACCHETTI
+#payment_section {
+    .bg-Bronze {
+        background-image: linear-gradient(to left, #d68721, #dc8327, #e17f2d, #e67b33, #eb7739);
+    }
+    .bg-Silver {
+        background-image: linear-gradient(to left, #dcd9d5, #d5d0cf, #ccc8c9, #c2c1c1, #b9b9b9);
+    }
+    .bg-Gold {
+        background-image: linear-gradient(to left, #ffbe45, #ffc158, #fdc36a, #fcc67a, #f9c98a);
+    }
+    .shadow-Bronze {
+        box-shadow: rgba(#e67b33, 0.1) 0px 20px 25px -5px, rgba(#e67b33, 0.1) 0px 10px 10px -5px;
+    }
+    .shadow-Silver {
+        box-shadow: rgba(#c2c1c1, 0.1) 0px 20px 25px -5px, rgba(#c2c1c1, 0.1) 0px 10px 10px -5px;
+    }
+    .shadow-Gold {
+        box-shadow: rgba(#fcc67a, 0.1) 0px 20px 25px -5px, rgba(#fcc67a, 0.1) 0px 10px 10px -5px;
+    }
+    .btn-Bronze {
+        border: 2px solid #e67b33;
+        &:hover {
+            background-color: #e67b33;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .btn-Silver {
+        border: 2px solid #c2c1c1;
+        &:hover {
+            background-color: #c2c1c1;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .btn-Gold {
+        border: 2px solid #fcc67a;
+        &:hover {
+            background-color: #fcc67a;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .card-price {
+        font-size: 4em;
+        position: relative;
+        &::before {
+            content: '€';
+            position: absolute;
+            display: inline-block;
+            font-size: 18px;
+            left: 20%;
+        }
+    }
+    .card {
+        transition: 0.4s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
+
+.apartment-row {
+    .edit-delete {
+        visibility: hidden;
+    }
+    &:hover {
+        .edit-delete {
+            visibility: initial;
+        }
+    }
+}
+
+// tolto il bordo che compare al click degli input
+
+.form-control:focus {
+    border-color:none !important;
+    box-shadow: none !important;
+} 

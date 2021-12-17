@@ -1,0 +1,68 @@
+#jumbotron {
+    padding: 250px 0;
+    overflow: hidden;
+    background-image: url("//89239-630690-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/10/01-3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    // .img-overlay {
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color: rgba(0, 0, 0, 0.459);
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 0;
+    // }
+    // img {
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 0;
+    // }
+    .far, .fas {
+        font-size: 1rem;
+        color: gray;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 1.3rem;
+    }
+    &::after {
+        content: " ";
+        background-color: #000;
+        opacity: 0.35;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+#sponsored {
+    .card {
+        .image-gradient {
+            &::after {
+                content: " ";
+                background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 67%);
+                opacity: 0.7;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .card-price {
+                bottom: 0;
+                left: 1rem;
+                z-index: 1;
+            }
+        }
+    }
+}
+// #sponsored {
+//     .card {
+//         width: 33%;
+//     }
+// }
